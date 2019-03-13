@@ -45,29 +45,29 @@ input, print
 3. by copy: inandout.  
 
 # Grammar  
-*program* ::= **program** id *block* **endprogram**  
-*block* ::= *declarations* *subprograms* *statements*  
-*declarations* ::= (**declare** *varlist*;)*  
-*varlist* ::= ε | id ( , id )*  
-*subprograms* ::= (*subprogram*)*  
-*subprogram* ::= **function** id *funcbody* **endfunction**  
-*funcbody* ::= *formalpars* *block*  
-*formalpars* ::= **(** *formalparlist* **)**  
-*formalparlist* ::= *formalparitem* ( , *formalparitem* )* | ε  
-*formalparitem* ::= **in** id | **inout** id | **inandout** id  
-*statements* ::= *statement* ( ; *statement* )*  
-    *statement* ::= ε |  
-    *assignment-stat* |  
-    *if-stat* |  
-    *while-stat* |  
-    *do-while-stat* |  
-    *loop-stat* |  
-    *exit-stat* |  
-    *forcase-stat* |  
-    *incase-stat* |  
-    *return-stat* |  
-    *input-stat* |  
-    *print-stat*  
+* *program* ::= **program** id *block* **endprogram**  
+* *block* ::= *declarations* *subprograms* *statements*  
+* *declarations* ::= (**declare** *varlist*;)*  
+* *varlist* ::= ε | id ( , id )*  
+* *subprograms* ::= (*subprogram*)*  
+* *subprogram* ::= **function** id *funcbody* **endfunction**  
+* *funcbody* ::= *formalpars* *block*  
+* *formalpars* ::= **(** *formalparlist* **)**  
+* *formalparlist* ::= *formalparitem* ( , *formalparitem* )* | ε  
+* *formalparitem* ::= **in** id | **inout** id | **inandout** id  
+* *statements* ::= *statement* ( ; *statement* )*  
+* *statement* ::= ε |  
+* *assignment-stat* |  
+*if-stat* |  
+*while-stat* |  
+*do-while-stat* |  
+*loop-stat* |  
+*exit-stat* |  
+*forcase-stat* |  
+*incase-stat* |  
+*return-stat* |  
+*input-stat* |  
+*print-stat*  
 *assignment-stat> ::= id := *expression*  
 *if-stat* ::= **if (** *condition* **)** **then** *statements* *elsepart* **endif**  
 *elsepart* ::= ε | **else** *statements*  

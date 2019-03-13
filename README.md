@@ -57,7 +57,7 @@ input, print
 * *formalparitem* ::= **in** id | **inout** id | **inandout** id  
 * *statements* ::= *statement* ( ; *statement* )*  
 * *statement* ::= ε |  
-* *assignment-stat* |  
+    *assignment-stat* |  
     *if-stat* |  
     *while-stat* |  
     *do-while-stat* |  

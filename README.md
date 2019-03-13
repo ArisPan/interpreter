@@ -1,13 +1,15 @@
-# interpreter
+# Project
 An interpreter for a small, pascal - like language.
 
-# Licensing
-This language is created by [George Manis](http://www.cs.uoi.gr/~manis/) as part of the undergraduate course «Compilers» in Computer Science Department of **University of Ioannina**.
+# Meet Starlet
+
+## Licensing
+**Starlet** programming language is created by [George Manis](http://www.cs.uoi.gr/~manis/) as part of the undergraduate course «Compilers» in Computer Science Department of **University of Ioannina**.
 It's purpose is educational and it's goal will be met when the interpreter is complete.
 Following is a discription of **Starlet** as composed and handed to class of 2019 by **George Manis**. I'm translating and posting as part of the project's documentation.
 
-# General Discription
-**Starlet** supports functions, recursion and nested function declaration plus, three types of variable passing, by reference, by value or by copy. 
+## General Discription
+**Starlet** supports functions, recursion and nested function declarations plus, three types of variable passing, by reference, by value or by copy. 
 It only allows integer values (-32767 < 32767) while string objects are not permitted.
 
 **Starlet's alphabet** includes:
@@ -44,7 +46,7 @@ input, print
 2. by reference: inout,  
 3. by copy: inandout.  
 
-# Grammar  
+## Grammar  
 * *program* ::= **program** id *block* **endprogram**  
 * *block* ::= *declarations* *subprograms* *statements*  
 * *declarations* ::= (**declare** *varlist*;)*  
@@ -68,7 +70,7 @@ input, print
     *return-stat* |  
     *input-stat* |  
     *print-stat*  
-* *assignment-stat> ::= id := *expression*  
+* *assignment-stat* ::= id := *expression*  
 * *if-stat* ::= **if (** *condition* **)** **then** *statements* *elsepart* **endif**  
 * *elsepart* ::= ε | **else** *statements*  
 * *while-stat* ::= **while (** *condition* **)** *statements* **endwhile**  
@@ -99,3 +101,16 @@ input, print
 * *add-oper* ::= **+** | **-**  
 * *mul-oper* ::= * | **/**  
 * *optional-sign* ::= ε | *add-oper*  
+
+
+# The Interpreter
+
+### Our interpreter will be completed in 4 phases
+
+### Phase 1 - Lexical and syntax analysis
+
+### Phase 2 - Intermediate code generation
+
+### Phase 3 - Semantic analysis and symbol table
+
+### Phase 4 - Code generation
